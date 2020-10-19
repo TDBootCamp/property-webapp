@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { LayoutsModule } from './layouts/layouts.module';
 import { SharedModule } from './shared/shared.module';
+import { DataTablesModule } from 'angular-datatables';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -24,9 +26,12 @@ import { SharedModule } from './shared/shared.module';
     HttpClientModule,
     CarouselModule,
     SharedModule,
+    DataTablesModule,
     
     // ScrollToModule,
-    RouterModule.forRoot(routes, { useHash: false, anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' })
+    RouterModule.forRoot(routes, { useHash: false, anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' }),
+    
+    NgbModule
 
   ],
   providers: [],

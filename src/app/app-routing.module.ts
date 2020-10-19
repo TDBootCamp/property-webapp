@@ -2,15 +2,22 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
 import { ECommerceComponent } from './layouts/e-commerce/e-commerce.component';
+import { EcommerceSearchBarComponent } from './layouts/e-commerce/ecommerce-search-bar/ecommerce-search-bar.component';
 export const routes: Routes = [
   {
     path: '',
     redirectTo: '/e-commerce',
-    pathMatch: 'full',
+    pathMatch: 'full', data: {
+      title : "PROPERTY MARKET"
+    }
   },
   {
     path: 'e-commerce',
     component: ECommerceComponent
+  },
+  {
+    path : 'search',
+    component: EcommerceSearchBarComponent 
   }
 
 ];

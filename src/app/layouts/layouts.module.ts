@@ -44,6 +44,7 @@ import { NewProductComponent } from './e-commerce/product/widget/new-product/new
 import { ProductBoxComponent } from './e-commerce/product/widget/product-box/product-box.component';
 import { SuccessComponent } from './e-commerce/product/widget/success/success.component';
 import { NgxMasonryModule } from 'ngx-masonry';
+import { EcommerceSearchBarComponent } from './e-commerce/ecommerce-search-bar/ecommerce-search-bar.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {};
 
@@ -71,7 +72,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {};
     CategoriesComponent, 
     NewProductComponent, 
     ProductBoxComponent, 
-    SuccessComponent],
+    SuccessComponent, EcommerceSearchBarComponent],
 
   imports: [
     CommonModule,
