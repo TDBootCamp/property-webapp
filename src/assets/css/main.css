@@ -809,6 +809,7 @@ legend {
 }
 
 .s003 {
+  min-height: 30vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
