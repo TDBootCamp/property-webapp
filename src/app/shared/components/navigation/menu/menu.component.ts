@@ -13,6 +13,33 @@ export class MenuComponent implements OnInit {
   public active: boolean = false;
   public activeChildItem : string = '' 
   public overlay: boolean = false;
+
+  navItem = [
+    { 
+      name : "Home",
+      link : "/e-commerce"
+    },
+    { 
+      name : "Beli Sewa",
+      link : "/beli-sewa"
+    },
+    { 
+      name : "Baru",
+      link : "/baru"
+    },
+    { 
+      name : "KPR",
+      link : "/kpr"
+    },
+    { 
+      name : "Panduan",
+      link : "/panduan"
+    },
+    { 
+      name : "Kontak Kami",
+      link : "/contact-us"
+    }
+  ];
   
   constructor( public navServices: NavService) { }
  

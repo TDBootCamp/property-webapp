@@ -19,7 +19,7 @@ export class EcommerceBannerSliderComponent implements OnInit {
       link: '/e-commerce/left-sidebar/collection/new'
     },
     {
-      img: 'assets/images/ecommerce/2.jpg',
+      img: 'assets/images/property-images/home/carousel-1.jpg',
       title: 'Exclusive Offer',
       description: 'I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.',
       btn: 'Offer',
