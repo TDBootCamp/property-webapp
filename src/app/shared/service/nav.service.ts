@@ -25,21 +25,7 @@ export class NavService {
 
   MENUITEMS: Menu[] = [
 	 {
-			title: 'Home', type: 'sub', children: [
-            { path: '/agency', title: 'Agency', type: 'link' },
-				{ path: '/enterprice', title: 'App Landing1', type: 'link' },
-            { path: '/modern', title: 'App Landing2', type: 'link', },
-            { path: '/event', title: 'Event', type: 'link' },
-            { path: '/gym', title: 'Gym', type: 'link' },
-            { path: '/music', title: 'Music', type: 'link' }, 
-            { path: '/resume', title: 'Resume', type: 'link' },
-            { path: '/enterprice-sass', title: 'Sass1', type: 'link' },
-				{ path: '/modern-sass', title: 'Sass2', type: 'link' },
-            { path: '/wedding', title: 'Wedding', type: 'link'},
-            { path: '/yoga', title: 'Yoga', type: 'link'},
-            { path: '/portfolio-layout', title: 'Portfolio', type: 'link' },
-            { path: '/e-commerce', title: 'E-commerce', type: 'link' },
-			],
+			title: 'Home', type: 'link'
     },
     {
 			title: 'Blog', type: 'sub', children: [

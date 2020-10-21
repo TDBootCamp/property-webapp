@@ -6,7 +6,31 @@
               <nav>
                   <a class="logo-erapper" href="#"><img alt="" class="img-fluid"
                                                         src="assets/images/logo/19.png"></a>
-                 <app-menu></app-menu>
+                 <div class="main-menu m-x-auto" id="nav">
+                        <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#scroll-spy" aria-controls="scroll-spy" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="scroll-spy">
+                                <ul class="navbar-nav mx-auto nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" #home (click)="('home')">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" (click)="('')">sasad</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" (click)="('')">portfolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://pixelstrap.freshdesk.com">support</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
                   <div class="top-header-right">
                       <ul>
                           <li class="search">
@@ -25,39 +49,6 @@
                                   </form>
                               </div>
                           </li>
-                          <li class="cart">
-                              <a>
-                                  <i class="icon-shopping-cart-full" (click)="showItem = !showItem"></i>
-                              </a>
-                              <span class="cart_qty_cls">{{shoppingCartItems.length}}</span>
-                              <div class="dropdown-menu dropdown-menu-right" [class.show]="showItem">
-                                <ul class="shopping-cart" *ngIf='shoppingCartItems.length'>
-                                    <li *ngFor="let item of shoppingCartItems">
-                                      <div class="media">
-                                        <a [routerLink]="['/e-commerce/left-sidebar/product/', item.product.id]"><img class="mr-3" [src]="item.product.img" alt="Generic placeholder image"></a>
-                                        <div class="media-body">
-                                          <a [routerLink]="['/home/left-sidebar/product', item.product.id]"><h4>{{ item.product.name }}</h4></a>
-                                          <h4><span>{{ item.quantity }} x {{ item.product.price | currency:productService?.currency:'symbol' }}</span></h4>
-                                        </div>
-                                      </div>
-                                      <div class="close-circle">
-                                        <a (click)="removeItem(item)"><i class="fa fa-times" aria-hidden="true"></i></a>
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <div class="total">
-                                        <h5>subtotal : <span>{{ getTotal() | async | currency:productService?.currency:'symbol'}}</span></h5>
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <div class="buttons">
-                                        <a [routerLink]="'/e-commerce/cart'" class="view-cart">view cart</a>
-                                        <a [routerLink]="'/e-commerce/checkout'" class="checkout">checkout</a>
-                                      </div>
-                                    </li>
-                                  </ul>
-                              </div>
-                          </li>
                           <li class="account ">
                               <a aria-expanded="false" data-toggle="dropdown" href="#" id="dropdownMenuButton2">
                                   <i class="icon-user"></i>
@@ -65,8 +56,6 @@
                               <div aria-labelledby="dropdownMenuButton2" class="dropdown-menu show dropdown-menu-right">
                                   <a class="dropdown-item" href="#">Login</a>
                                   <a class="dropdown-item" href="#">Account</a>
-                                  <a class="dropdown-item" href="#">Whishlist</a>
-                                  <a class="dropdown-item" href="#">Checkout</a>
                               </div>
                           </li>
                       </ul>
