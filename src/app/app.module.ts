@@ -11,12 +11,14 @@ import { LayoutsModule } from './layouts/layouts.module';
 import { SharedModule } from './shared/shared.module';
 import { DataTablesModule } from 'angular-datatables';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AdsComponent } from './layouts/ads/ads.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent
+    LandingComponent,
+    AdsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

@@ -43,7 +43,6 @@ import { NewProductComponent } from './e-commerce/product/widget/new-product/new
 import { ProductBoxComponent } from './e-commerce/product/widget/product-box/product-box.component';
 import { SuccessComponent } from './e-commerce/product/widget/success/success.component';
 import { EcommerceSearchBarComponent } from './e-commerce/ecommerce-search-bar/ecommerce-search-bar.component';
-import { AdsComponent } from './ads/ads.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {};
 
@@ -71,7 +70,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {};
     CategoriesComponent, 
     NewProductComponent, 
     ProductBoxComponent, 
-    SuccessComponent, EcommerceSearchBarComponent, AdsComponent],
+    SuccessComponent, EcommerceSearchBarComponent],
 
   imports: [
     CommonModule,
