@@ -13,7 +13,6 @@ import { AngularTiltModule } from 'angular-tilt';
 import 'hammerjs';
 import 'mousetrap';
 import { ScrollToModule } from 'ng2-scroll-to-el';
-import { MasonryGalleryModule } from 'ngx-masonry-gallery';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxPayPalModule } from 'ngx-paypal';
 import { Ng5SliderModule } from 'ng5-slider';
@@ -43,7 +42,6 @@ import { CategoriesComponent } from './e-commerce/product/widget/collection/filt
 import { NewProductComponent } from './e-commerce/product/widget/new-product/new-product.component';
 import { ProductBoxComponent } from './e-commerce/product/widget/product-box/product-box.component';
 import { SuccessComponent } from './e-commerce/product/widget/success/success.component';
-import { NgxMasonryModule } from 'ngx-masonry';
 import { EcommerceSearchBarComponent } from './e-commerce/ecommerce-search-bar/ecommerce-search-bar.component';
 import { AdsComponent } from './ads/ads.component';
 
@@ -86,12 +84,10 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {};
     CountToModule,
     AngularTiltModule,
     ScrollToModule.forRoot(),
-    MasonryGalleryModule,
     FormsModule,
     ReactiveFormsModule,
     NgxPayPalModule,
     Ng5SliderModule,
-    NgxMasonryModule
   ],
 
   exports: [
